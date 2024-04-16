@@ -52,7 +52,7 @@ TRYAGAIN:
 		for(int i=0; i<4; i++){ chk+= data[i]; }
    		if(chk==data[4]){
 			temp = temp / 10;
-   			if(temp > 28) {
+   			if(temp > 26) {
 				digitalWrite(LED_R, HIGH);
 				digitalWrite(LED_G, LOW);
 			} else {

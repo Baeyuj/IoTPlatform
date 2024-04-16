@@ -48,6 +48,6 @@ int main(int argc, char* argv[]){
 			digitalWrite(LED_G, LOW);
 			digitalWrite(LED_B, LOW);
 		}
-		delay(100);
+		delay(50);
 	}
 }
