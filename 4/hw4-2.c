@@ -25,11 +25,11 @@ int main(void){
 		x = analogRead(BASE);
 		printf("%d\n", x);
 		
-		if(x<50){
+		if(x<100){
 			digitalWrite(LED_R, HIGH);
 			digitalWrite(LED_G, LOW);
 			digitalWrite(LED_B, LOW);
-		} else if(x<100){
+		} else if(x<200){
 			digitalWrite(LED_R, LOW);
 			digitalWrite(LED_G, HIGH);
 			digitalWrite(LED_B, LOW);
@@ -42,6 +42,6 @@ int main(void){
 			digitalWrite(LED_G, LOW);
 			digitalWrite(LED_B, LOW);	
 		}
-		sleep(1);
+		usleep(100);
 	}
 }
